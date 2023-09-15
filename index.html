@@ -1,15 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fylo | Dark Theme</title>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
-    
 </head>
+
 <body>
-    
+
+
+    <header class="header">
+        <div class="header-into d-flex justify-content-between">
+            <img src="./src/img/logo.svg" alt="logo">
+            <nav class="menu">
+                <ul class="d-flex gap-5">
+                    <li>
+                        <a href="/index.html">Features</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">Team</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">Sign In</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="header-intro d-flex flex-column">
+        <div class="intro d-flex flex-column align-items-center text-center">
+            <img src="./src/img/illustration-intro.png" alt="" class="intro-img">
+            <h2 class="intro-title">
+                All your files in one secure location, accessible anywhere.
+            </h2>
+            <p class="intro-text">
+                Fylo stores all your most important files in one secure location. Access them wherever you need,
+                share
+                and collaborate with friends family, and co-workers.
+            </p>
+            <button type="submit" class="intro-button rounded rounded-5">Get Started</button>
+        </div>
+    </section>
+
+    <div id="back">
+        <img src="./src/img/bg-curvy-desktop.svg" alt="" class="back-desktop">
+        <main class="main box d-flex flex-column">
+            <section class="items container text-center">
+                <div class="row gx-4 justify-content-between">
+                    <div class="item one col-5">
+                        <img src="./src/img/icon-access-anywhere.svg" alt="Access anywhere!">
+                        <h4 class="item-title">Access your files, anywhere</h4>
+                        <p class="item-text">The ability to use a smartphone, tablet, or computer to access your account
+                            means
+                            your files follow you everywhere.</p>
+                    </div>
+                    <div class="item two col-5">
+                        <img src="./src/img/icon-security.svg" alt="Security">
+                        <h4 class="item-title">Security you can trust</h4>
+                        <p class="item-text">2-factor authentication and user-controlled encryption are just a couple of
+                            the
+                            security features we allow to help secure your files.</p>
+                    </div>
+                    <div class="item three col-5 gy-5">
+                        <img src="./src/img/icon-collaboration.svg" alt="Access anywhere!">
+                        <h4 class="item-title">Real-time collaboration</h4>
+                        <p class="item-text">Securely share files and folders with friends, family and colleagues for
+                            live
+                            collaboration. No email attachments required.</p>
+                    </div>
+                    <div class="item four col-5 gy-5">
+                        <img src="./src/img/icon-any-file.svg" alt="Access anywhere!">
+                        <h4 class="item-title">Store any type of file</h4>
+                        <p class="item-text">Whether you're sharing holidays photos or work documents, Fylo has you
+                            covered
+                            allowing for all file types to be securely stored and shared.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info container">
+                <div class="row justify-content-between align-items-center gx-2">
+                    <img src="./src/img/illustration-stay-productive.png" alt="Stay Productive!" class="info-img col-7">
+                    <div class="info-desc col-5 d-flex flex-column gap-2">
+                        <h3 class="info-title">Stay productive,<br>wherever you are</h3>
+                        <p class="info-text">Never let location be an issue when accessing your files. Fylo has you
+                            covered
+                            for
+                            all of your file storage needs.</p>
+                        <p class="info-text">Securely share files and folders with friends, family and colleagues for
+                            live
+                            collaboration. No email attachments required.</p>
+                        <a href="*" target="_blank">See how Fylo works <i class="bi bi-arrow-right-circle-fill"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feedback container">
+                <img src="./src/img/bg-quotes.png" alt="Quote" class="feedback-quote">
+                <div class="testemonials d-grid">
+                    <div class="coment fb-one rounded rounded-4 d-flex flex-column gap-3">
+                        <p class="coment-text mt-3">
+                            Fylo has improved our team productivity by an order of magnitude. Since making the switch
+                            our
+                            team has become a well-oiled collaboration machine.
+                        </p>
+                        <div class="person d-flex gap-2">
+                            <img src="./src/img/profile-1.jpg" alt="Photo" class="person-img rounded-circle">
+                            <div class="name d-flex flex-column justify-content-end">
+                                <h6 class="name-title">Satish Patel</h6>
+                                <div class="name-ocup">Founder & CEO, Huddle</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coment fb-two rounded rounded-4 d-flex flex-column gap-3">
+                        <p class="coment-text mt-3">
+                            Fylo has improved our team productivity by an order of magnitude. Since making the switch
+                            our
+                            team has become a well-oiled collaboration machine.
+                        </p>
+                        <div class="person d-flex gap-2">
+                            <img src="./src/img/profile-2.jpg" alt="Photo" class="person-img rounded-circle">
+                            <div class="name d-flex flex-column justify-content-end">
+                                <h6 class="name-title">Bruce McKenzie</h6>
+                                <div class="name-ocup">Founder & CEO, Huddle</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coment fb-three rounded rounded-4 d-flex flex-column gap-3">
+                        <p class="coment-text mt-3">
+                            Fylo has improved our team productivity by an order of magnitude. Since making the switch
+                            our
+                            team has become a well-oiled collaboration machine.
+                        </p>
+                        <div class="person d-flex gap-2">
+                            <img src="./src/img/profile-3.jpg" alt="Photo" class="person-img rounded-circle">
+                            <div class="name d-flex flex-column justify-content-end">
+                                <h6 class="name-title">Iva Boyd</h6>
+                                <div class="name-ocup">Founder & CEO, Huddle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div class="box">
+        <section class="cta-box d-flex flex-column align-items-center text-center position-relative py-5 rounded rounded-4">
+            <h2 class="cta-title mb-3">Get early access today</h2>
+            <p class="cta-text mb-5">
+                It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+                questions, our support team would be happy to help you.
+            </p>
+            <form action="" method="get" class="form d-flex gap-4">
+                <input type="email" name="email" class="email rounded rounded-5 px-4" placeholder="email@example.com">
+                <button type="submit" class="button rounded rounded-5">Get Started For Free</button>
+            </form>
+        </section>
+
+        <div class="footer-box container d-flex flex-column">
+            <img src="./src/img/logo.svg" alt="Fylo" class="footer-img">
+            <div class="footer-content d-flex">
+                <div class="location d-flex ">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p class="local-text text-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua
+                    </p>
+                </div>
+                <div class="contact">
+                    <div class="phone">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p class="num-phone">+1-543-123-4567</p>
+                    </div>
+                    <div class="email">
+                        <i class="bi bi-envelope-fill"></i>
+                        <p class="email-text">example@fylo.com</p>
+                    </div>
+                </div>
+                <div class="links">
+                    <nav class="about">
+                        <ul>
+                            <li>About Us</li>
+                            <li>Jobs</li>
+                            <li>Press</li>
+                            <li>Blog</li>
+                        </ul>
+                    </nav>
+                    <nav class="terms">
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>Terms</li>
+                            <li>Privacy</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="social">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="./src/js/index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,204 @@
+body {
+  background: #1B2330;
+  color: white;
+}
+
+.header, .box {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.header-into {
+  margin: 4.5rem 0;
+}
+.header-into a {
+  padding: 0 0 0.5rem;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+.header-into a:hover {
+  font-weight: 400;
+  border-bottom: 1px solid white;
+}
+
+.header-intro {
+  margin: 0 0 200px;
+}
+.header-intro .intro .intro-img {
+  max-width: 70%;
+  margin-bottom: 2.25rem;
+}
+.header-intro .intro .intro-title {
+  width: 45rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+.header-intro .intro .intro-text {
+  max-width: 38rem;
+  margin: 2rem 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.header-intro .intro .intro-button {
+  width: 17.5rem;
+  height: 3.5rem;
+  background: linear-gradient(138deg, #63E1D9 -49.34%, #34A0CD 100%);
+  box-shadow: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.8));
+  border: none;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+#back {
+  background: #181F2B;
+  padding: 0 0 22.5rem;
+}
+#back .back-desktop {
+  width: 100%;
+  position: absolute;
+  top: 53rem;
+  z-index: -99;
+}
+
+.main {
+  gap: 8rem;
+}
+.main .items {
+  max-width: 880px;
+}
+.main .items .item-title {
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.main .items .item-text {
+  font-size: 0.875rem;
+}
+.main .info .row .info-img {
+  padding: 3rem;
+}
+.main .info .row .info-desc {
+  margin-top: 3rem;
+}
+.main .info .row .info-desc .info-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.main .info .row .info-desc .info-text {
+  font-size: 1rem;
+}
+.main .info .row .info-desc a {
+  width: fit-content;
+  padding: 0 0 0.25rem;
+  color: #62E0D9;
+  border-bottom: 1px solid #62E0D9;
+}
+.main .info .row .info-desc a i {
+  color: #62E0D9;
+}
+.main .info .row .info-desc a i:hover {
+  color: #8ADAE3;
+}
+.main .info .row .info-desc a:hover {
+  color: #8ADAE3;
+  border-bottom: 1px solid #8ADAE3;
+}
+.main .feedback {
+  max-width: 1160px;
+}
+.main .feedback .feedback-quote {
+  position: relative;
+  top: 12px;
+  left: -10px;
+}
+.main .feedback .testemonials {
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.main .feedback .testemonials .coment {
+  padding: 1.75rem;
+  background: #202A3C;
+  box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+}
+.main .feedback .testemonials .coment .coment-text {
+  font-size: 0.875rem;
+}
+.main .feedback .testemonials .coment .person .person-img {
+  width: 2rem;
+  height: 2rem;
+}
+.main .feedback .testemonials .coment .person .name .name-title {
+  font-size: 12px;
+  font-weight: 700;
+}
+.main .feedback .testemonials .coment .person .name .name-ocup {
+  font-size: 8px;
+  font-weight: 400;
+  margin-top: -4px;
+}
+
+.cta-box {
+  max-width: 863px;
+  top: -10.625rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1B2330;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.cta-box .cta-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.cta-box .cta-text {
+  padding: 0 5.9375rem;
+  font-size: 14px;
+}
+.cta-box form {
+  width: 100%;
+  padding: 0 4.5rem;
+}
+.cta-box form .email {
+  flex-grow: 1;
+  width: auto;
+  border: none;
+  outline: none;
+}
+.cta-box form .email::placeholder {
+  font-weight: 300;
+}
+.cta-box form .email:focus::placeholder {
+  color: transparent;
+}
+.cta-box form .button {
+  flex-grow: 0;
+  width: 12.5rem;
+  height: 3rem;
+  background: linear-gradient(138deg, #63E1D9 -49.34%, #34A0CD 100%);
+  box-shadow: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.8));
+  border: none;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+#footer {
+  background: #0B1524;
+}
+#footer .footer-box {
+  gap: 3.375rem;
+}
+#footer .footer-box .footer-img {
+  max-width: 108px;
+}
+
+/*# sourceMappingURL=style.css.map */
