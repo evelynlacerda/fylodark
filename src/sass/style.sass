@@ -2,63 +2,63 @@
 @use 'mixins'
 
 body
-    background: variables.$background
+    background: variables.$secondary
     color: white
 
-.header, .box
+.box
     margin: 0 auto
     max-width: 1240px
 
-.header-into
-    margin: 4.5rem 0
+.header
+    background: variables.$background
 
-    a
-        padding: 0 0 .5rem
-        color: white
-        font-family: 'Raleway', sans-serif
-        font-weight: 300
-        border-bottom: 1px solid transparent
-        transition: .3s ease-in-out
+    .header-container
+        padding: 4.5rem 0
 
-        &:hover
-            font-weight: 400
-            border-bottom: 1px solid white
+        .header-logo
+            width: 7.5rem
+            height: fit-content
 
-.header-intro
-    margin: 0 0 200px
-
-    .intro
-        .intro-img
-            max-width: 70%
-            margin-bottom: 2.25rem
-
-        .intro-title
-            width: 45rem
+        a
+            padding: 0 0 .5rem
+            color: white
             font-family: 'Raleway', sans-serif
-            font-size: 2.5rem
-            font-weight: 700
-            line-height: 150%
+            font-weight: 300
+            border-bottom: 1px solid transparent
+            transition: .3s ease-in-out
 
-        .intro-text
-            max-width: 38rem
-            margin: 2rem 0
-            font-size: 1.25rem
-            font-weight: 400
+            &:hover
+                font-weight: 400
+                border-bottom: 1px solid white
 
-        .intro-button
-            width: 17.5rem
-            height: 3.5rem
-            @include mixins.button-submit
+.intro
+    max-width: 100%
+    background: variables.$background url('../img/bg-curvy-desktop.svg') no-repeat bottom center
+    background-size: contain
 
-#back
-    background: variables.$secondary
-    padding: 0 0 22.5rem
+    .intro-pic
+        max-width: 90%
+        width: 40rem
+        height: fit-content
 
-    .back-desktop
-        width: 100%
-        position: absolute
-        top: 53rem
-        z-index: -99
+    .intro-title
+        width: 45rem
+        font-family: 'Raleway', sans-serif
+        font-size: 2.5rem
+        font-weight: 700
+        line-height: 150%
+
+    .intro-text
+        max-width: 38rem
+        margin: 2rem auto
+        font-size: 1.25rem
+        font-weight: 400
+
+    .intro-button
+        width: 17.5rem
+        height: 3.5rem
+        @include mixins.button-submit
+        margin: 0 0 14rem
 
 .main
     gap: 8rem
@@ -109,6 +109,7 @@ body
 
     .feedback
         max-width: 1160px
+        margin: 0 auto
 
         .feedback-quote
             position: relative
@@ -145,7 +146,7 @@ body
 
 .cta-box
     max-width: 863px
-    top: -10.625rem
+    top: 7rem
     left: 50%
     transform: translateX(-50%)
     background: variables.$blue300
@@ -169,10 +170,10 @@ body
             width: auto
             border: none
             outline: none
-        
+
             &::placeholder
                 font-weight: 300
-                
+
             &:focus
                 &::placeholder
                     color: transparent
@@ -188,8 +189,35 @@ body
 
     .footer-box
         gap: 3.375rem
+        padding-top: 12rem
 
         .footer-img
             max-width: 108px
-        
-        
+
+        .footer-content
+            .location
+                max-width: 23.75rem
+
+            .contact p
+                font-size: 14px
+
+            .links a
+                color: white
+                transition: .2s ease-in-out
+
+                &:hover
+                    color: variables.$active
+
+            .social a
+                width: 2.5rem
+                height: 2.5rem
+                color: white
+                border: 1px solid white
+                transition: .2s ease-in-out
+
+                &:hover
+                    color: variables.$active
+                    border: 1px solid variables.$active
+
+                i
+                    font-size: 0.875rem

@@ -1,17 +1,24 @@
 body {
-  background: #1B2330;
+  background: #181F2B;
   color: white;
 }
 
-.header, .box {
+.box {
   margin: 0 auto;
   max-width: 1240px;
 }
 
-.header-into {
-  margin: 4.5rem 0;
+.header {
+  background: #1B2330;
 }
-.header-into a {
+.header .header-container {
+  padding: 4.5rem 0;
+}
+.header .header-container .header-logo {
+  width: 7.5rem;
+  height: fit-content;
+}
+.header .header-container a {
   padding: 0 0 0.5rem;
   color: white;
   font-family: "Raleway", sans-serif;
@@ -19,32 +26,35 @@ body {
   border-bottom: 1px solid transparent;
   transition: 0.3s ease-in-out;
 }
-.header-into a:hover {
+.header .header-container a:hover {
   font-weight: 400;
   border-bottom: 1px solid white;
 }
 
-.header-intro {
-  margin: 0 0 200px;
+.intro {
+  max-width: 100%;
+  background: #1B2330 url("../img/bg-curvy-desktop.svg") no-repeat bottom center;
+  background-size: contain;
 }
-.header-intro .intro .intro-img {
-  max-width: 70%;
-  margin-bottom: 2.25rem;
+.intro .intro-pic {
+  max-width: 90%;
+  width: 40rem;
+  height: fit-content;
 }
-.header-intro .intro .intro-title {
+.intro .intro-title {
   width: 45rem;
   font-family: "Raleway", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 150%;
 }
-.header-intro .intro .intro-text {
+.intro .intro-text {
   max-width: 38rem;
-  margin: 2rem 0;
+  margin: 2rem auto;
   font-size: 1.25rem;
   font-weight: 400;
 }
-.header-intro .intro .intro-button {
+.intro .intro-button {
   width: 17.5rem;
   height: 3.5rem;
   background: linear-gradient(138deg, #63E1D9 -49.34%, #34A0CD 100%);
@@ -53,17 +63,11 @@ body {
   font-family: "Raleway", sans-serif;
   color: white;
   font-weight: 700;
+  transition: 0.5s ease-in-out;
+  margin: 0 0 14rem;
 }
-
-#back {
-  background: #181F2B;
-  padding: 0 0 22.5rem;
-}
-#back .back-desktop {
-  width: 100%;
-  position: absolute;
-  top: 53rem;
-  z-index: -99;
+.intro .intro-button:hover {
+  background: linear-gradient(138deg, #34A0CD -49.34%, #63E1D9 100%);
 }
 
 .main {
@@ -113,6 +117,7 @@ body {
 }
 .main .feedback {
   max-width: 1160px;
+  margin: 0 auto;
 }
 .main .feedback .feedback-quote {
   position: relative;
@@ -148,7 +153,7 @@ body {
 
 .cta-box {
   max-width: 863px;
-  top: -10.625rem;
+  top: 7rem;
   left: 50%;
   transform: translateX(-50%);
   background: #1B2330;
@@ -189,6 +194,10 @@ body {
   font-family: "Raleway", sans-serif;
   color: white;
   font-weight: 700;
+  transition: 0.5s ease-in-out;
+}
+.cta-box form .button:hover {
+  background: linear-gradient(138deg, #34A0CD -49.34%, #63E1D9 100%);
 }
 
 #footer {
@@ -196,9 +205,37 @@ body {
 }
 #footer .footer-box {
   gap: 3.375rem;
+  padding-top: 12rem;
 }
 #footer .footer-box .footer-img {
   max-width: 108px;
+}
+#footer .footer-box .footer-content .location {
+  max-width: 23.75rem;
+}
+#footer .footer-box .footer-content .contact p {
+  font-size: 14px;
+}
+#footer .footer-box .footer-content .links a {
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+#footer .footer-box .footer-content .links a:hover {
+  color: #8ADAE3;
+}
+#footer .footer-box .footer-content .social a {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: white;
+  border: 1px solid white;
+  transition: 0.2s ease-in-out;
+}
+#footer .footer-box .footer-content .social a:hover {
+  color: #8ADAE3;
+  border: 1px solid #8ADAE3;
+}
+#footer .footer-box .footer-content .social a i {
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=style.css.map */
