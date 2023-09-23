@@ -7,25 +7,30 @@ body
 
 .box
     margin: 0 auto
-    max-width: 1240px
+    max-width: 1200px
 
 .header
     background: variables.$background
 
     .header-container
         padding: 4.5rem 0
+        @include mixins.mobile
+            padding: 2rem 0
 
         .header-logo
             width: 7.5rem
             height: fit-content
+            @include mixins.mobile
+                width: 5rem
 
         a
-            padding: 0 0 .5rem
             color: white
             font-family: 'Raleway', sans-serif
             font-weight: 300
             border-bottom: 1px solid transparent
             transition: .3s ease-in-out
+            @include mixins.mobile
+                font-size: 0.75rem
 
             &:hover
                 font-weight: 400
@@ -34,7 +39,11 @@ body
 .intro
     max-width: 100%
     background: variables.$background url('../img/bg-curvy-desktop.svg') no-repeat bottom center
-    background-size: contain
+    background-size: 100vw 480px
+    @include mixins.tablet
+        background-size: 100vw calc(480px - 10%)
+    @include mixins.mobile
+        background-size: 100vw calc(480px - 30%)
 
     .intro-pic
         max-width: 90%
@@ -42,29 +51,39 @@ body
         height: fit-content
 
     .intro-title
-        width: 45rem
+        max-width: 45rem
         font-family: 'Raleway', sans-serif
         font-size: 2.5rem
         font-weight: 700
         line-height: 150%
+        @include mixins.mobile
+            font-size: 1.5rem
 
     .intro-text
         max-width: 38rem
         margin: 2rem auto
         font-size: 1.25rem
         font-weight: 400
+        @include mixins.mobile
+            font-size: 0.875rem
 
     .intro-button
         width: 17.5rem
         height: 3.5rem
         @include mixins.button-submit
-        margin: 0 0 14rem
+        margin: 0 0 12rem
+        @include mixins.mobile
+            width: 13.5rem
+            height: 3rem
+            margin: 0
 
 .main
     gap: 8rem
 
     .items
         max-width: 880px
+        @include mixins.mobile
+            padding: 8rem 1.5rem 0
 
         .item-title
             margin: 1rem 0 .5rem 0
@@ -77,9 +96,6 @@ body
 
     .info
         .row
-            .info-img
-                padding: 3rem
-
             .info-desc
                 margin-top: 3rem
 
@@ -87,15 +103,21 @@ body
                     font-family: 'Raleway', sans-serif
                     font-size: 2.5rem
                     font-weight: 700
+                    @include mixins.mobile
+                        font-size: 1.125rem
 
                 .info-text
                     font-size: 1rem
+                    @include mixins.mobile
+                        font-size: 0.875rem
 
                 a
                     width: fit-content
                     padding: 0 0 .25rem
                     color: variables.$blue900
                     border-bottom: 1px solid variables.$blue900
+                    @include mixins.mobile
+                        font-size: 0.75rem
 
                     i
                         color: variables.$blue900
@@ -110,16 +132,26 @@ body
     .feedback
         max-width: 1160px
         margin: 0 auto
+        @include mixins.tablet
+            padding: 0 2rem
 
         .feedback-quote
             position: relative
             top: 12px
             left: -10px
+            @include mixins.mobile
+                width: 2.5rem
+                height: fit-content
 
         .testemonials
             position: relative
             grid-template-columns: repeat(3, 1fr)
             gap: 2.5rem
+            @include mixins.tablet
+                gap: 1.5rem
+            @include mixins.mobile
+                grid-template-columns: 1fr
+                gap: 2rem
 
             .coment
                 padding: 1.75rem
@@ -128,6 +160,8 @@ body
 
                 .coment-text
                     font-size: 0.875rem
+                    @include mixins.mobile
+                        font-size: 0.75rem
 
                 .person
                     .person-img
@@ -151,25 +185,37 @@ body
     transform: translateX(-50%)
     background: variables.$blue300
     box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25)
+    @include mixins.mobile
+        max-width: 90%
 
     .cta-title
         font-family: 'Raleway', sans-serif
         font-size: 2rem
         font-weight: 700
+        @include mixins.mobile
+            font-size: 1.125rem
 
     .cta-text
-        padding: 0 5.9375rem
-        font-size: 14px
+        padding: 0 6rem
+        font-size: 0.875rem
+        @include mixins.mobile
+            padding: 0 1rem
+            margin: 0 0 2rem
 
     form
         width: 100%
         padding: 0 4.5rem
+        @include mixins.mobile
+            padding: 0
 
         .email
             flex-grow: 1
-            width: auto
+            max-width: 100%
             border: none
             outline: none
+            @include mixins.mobile
+                width: 100%
+                height: 3rem
 
             &::placeholder
                 font-weight: 300
@@ -183,6 +229,9 @@ body
             width: 12.5rem
             height: 3rem
             @include mixins.button-submit
+            @include mixins.mobile
+                width: 100%
+                height: 3rem
 
 #footer
     background: variables.$footer
@@ -190,6 +239,8 @@ body
     .footer-box
         gap: 3.375rem
         padding-top: 12rem
+        @include mixins.mobile
+            gap: 2.5rem
 
         .footer-img
             max-width: 108px
@@ -197,6 +248,10 @@ body
         .footer-content
             .location
                 max-width: 23.75rem
+
+                @include mixins.mobile
+                    .local-text
+                        font-size: 0.875rem
 
             .contact p
                 font-size: 14px
