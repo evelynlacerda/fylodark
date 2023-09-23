@@ -43,7 +43,8 @@ body
     @include mixins.tablet
         background-size: 100vw calc(480px - 10%)
     @include mixins.mobile
-        background-size: 100vw calc(480px - 30%)
+        background: variables.$background url('../img/bg-curvy-mobile.svg') no-repeat bottom center
+        background-size: 100vw calc(480px - 50%)
 
     .intro-pic
         max-width: 90%
@@ -134,6 +135,8 @@ body
         margin: 0 auto
         @include mixins.tablet
             padding: 0 2rem
+        @include mixins.mobile
+            margin-bottom: -3rem
 
         .feedback-quote
             position: relative
@@ -186,6 +189,7 @@ body
     background: variables.$blue300
     box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25)
     @include mixins.mobile
+        top: 5rem
         max-width: 90%
 
     .cta-title
@@ -247,7 +251,7 @@ body
 
         .footer-content
             .location
-                max-width: 23.75rem
+                max-width: 350px
 
                 @include mixins.mobile
                     .local-text
@@ -276,3 +280,13 @@ body
 
                 i
                     font-size: 0.875rem
+
+::-webkit-scrollbar
+    width: 10px
+
+::-webkit-scrollbar-track
+    display: none
+
+::-webkit-scrollbar-thumb
+    background: variables.$blue400
+    border-radius: 10px
