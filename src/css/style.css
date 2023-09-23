@@ -58,7 +58,7 @@ body {
 @media (max-width: 768.99px) {
   .intro {
     background: #1B2330 url("../img/bg-curvy-mobile.svg") no-repeat bottom center;
-    background-size: contain;
+    background-size: 100vw, contain;
   }
 }
 .intro .intro-pic {
