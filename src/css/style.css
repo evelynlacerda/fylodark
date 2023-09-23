@@ -108,7 +108,7 @@ body {
   .intro .intro-button {
     width: 13.5rem;
     height: 3rem;
-    margin: 0;
+    margin: 0 0 0.5rem;
   }
 }
 
@@ -120,7 +120,7 @@ body {
 }
 @media (max-width: 768.99px) {
   .main .items {
-    padding: 8rem 1.5rem 0;
+    padding: 8rem 1rem 0;
   }
 }
 .main .items .item-title {
