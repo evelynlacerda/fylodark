@@ -58,7 +58,7 @@ body {
 @media (max-width: 768.99px) {
   .intro {
     background: #1B2330 url("../img/bg-curvy-mobile.svg") no-repeat bottom center;
-    background-size: 100vw calc(480px - 50%);
+    background-size: contain;
   }
 }
 .intro .intro-pic {
@@ -384,6 +384,17 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #202A3C;
   border-radius: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (max-width: 768.99px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

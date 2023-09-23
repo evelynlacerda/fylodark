@@ -44,7 +44,8 @@ body
         background-size: 100vw calc(480px - 10%)
     @include mixins.mobile
         background: variables.$background url('../img/bg-curvy-mobile.svg') no-repeat bottom center
-        background-size: 100vw calc(480px - 50%)
+        background-size: contain
+        background
 
     .intro-pic
         max-width: 90%
@@ -290,3 +291,11 @@ body
 ::-webkit-scrollbar-thumb
     background: variables.$blue400
     border-radius: 10px
+
+@include mixins.tablet
+    ::-webkit-scrollbar
+        display: none
+
+@include mixins.mobile
+    ::-webkit-scrollbar
+        display: none
