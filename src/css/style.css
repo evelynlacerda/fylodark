@@ -324,6 +324,17 @@ body {
     height: 3rem;
   }
 }
+.cta-box .error {
+  display: none;
+  width: 100%;
+  padding: 0 5.75rem;
+  color: red;
+}
+@media (max-width: 768.99px) {
+  .cta-box .error {
+    padding: 0;
+  }
+}
 
 #footer {
   background: #0B1524;

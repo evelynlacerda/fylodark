@@ -170,10 +170,14 @@
                 It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
                 questions, our support team would be happy to help you.
             </p>
-            <form action="" method="get" class="form d-flex gap-4 flex-sm-row flex-column justify-content-center align-items-center">
-                <input type="email" name="email" class="email rounded rounded-5 px-4" placeholder="email@example.com">
-                <button type="submit" class="button rounded rounded-5">Get Started For Free</button>
+            <form action="" method="get" class="form d-flex gap-4 flex-sm-row flex-column justify-content-center align-items-center mb-2">
+                <input type="email" name="email" class="email rounded rounded-5 px-4" placeholder="email@example.com" data-input-email>
+                <button type="submit" class="button rounded rounded-5" data-button-send>Get Started For Free</button>
             </form>
+            <div class="error align-content-start gap-2" data-error>
+                <i class="bi bi-exclamation-circle"></i>
+                <p class="text-error">Error! Plese, check your email.</p>
+            </div>
         </section>
     </main>
 
