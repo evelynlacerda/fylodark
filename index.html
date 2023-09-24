@@ -7,15 +7,15 @@
     <title>Fylo | Dark Theme</title>
 
     <link rel="shortcut icon" href="./src/img/favicon-32x32.ico" type="image/x-icon">
-    
+
     <script src="https://unpkg.com/scrollreveal"></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@100;300;400;700&display=swap"
-    rel="stylesheet">
-    
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
@@ -66,28 +66,28 @@
         <section class="items container text-center">
             <div class="row gx-4 justify-content-between">
                 <div class="item one col-md-5 col-12">
-                    <img src="./src/img/icon-access-anywhere.svg" alt="Access anywhere!">
+                    <img src="./src/img/icon-access-anywhere.svg" alt="Access anywhere!" class="item-img">
                     <h4 class="item-title">Access your files, anywhere</h4>
                     <p class="item-text">The ability to use a smartphone, tablet, or computer to access your account
                         means
                         your files follow you everywhere.</p>
                 </div>
                 <div class="item two col-md-5 col-12 gy-lg-0 gy-5">
-                    <img src="./src/img/icon-security.svg" alt="Security">
+                    <img src="./src/img/icon-security.svg" alt="Security" class="item-img">
                     <h4 class="item-title">Security you can trust</h4>
                     <p class="item-text">2-factor authentication and user-controlled encryption are just a couple of
                         the
                         security features we allow to help secure your files.</p>
                 </div>
                 <div class="item three col-md-5 col-12 gy-5">
-                    <img src="./src/img/icon-collaboration.svg" alt="Access anywhere!">
+                    <img src="./src/img/icon-collaboration.svg" alt="Colaboration" class="item-img">
                     <h4 class="item-title">Real-time collaboration</h4>
                     <p class="item-text">Securely share files and folders with friends, family and colleagues for
                         live
                         collaboration. No email attachments required.</p>
                 </div>
                 <div class="item four col-md-5 col-12 gy-5">
-                    <img src="./src/img/icon-any-file.svg" alt="Access anywhere!">
+                    <img src="./src/img/icon-any-file.svg" alt="Any file" class="item-img">
                     <h4 class="item-title">Store any type of file</h4>
                     <p class="item-text">Whether you're sharing holidays photos or work documents, Fylo has you
                         covered
@@ -98,7 +98,8 @@
 
         <section class="info">
             <div class="row justify-content-between align-items-center gx-2 px-4">
-                <img src="./src/img/illustration-stay-productive.png" alt="Stay Productive!" class="info-img col-md-7 col-12 p-4">
+                <img src="./src/img/illustration-stay-productive.png" alt="Stay Productive!"
+                    class="info-img col-md-7 col-12 p-4">
                 <div class="info-desc col-md-5 col-12 d-flex flex-column gap-2">
                     <h3 class="info-title">Stay productive, wherever you are</h3>
                     <p class="info-text">Never let location be an issue when accessing your files. Fylo has you
@@ -108,7 +109,7 @@
                     <p class="info-text">Securely share files and folders with friends, family and colleagues for
                         live
                         collaboration. No email attachments required.</p>
-                    <a href="/index.html" target="_blank">
+                    <a href="/index.html" target="_blank" class="info-link">
                         See how Fylo works <i class="bi bi-arrow-right-circle-fill"></i>
                     </a>
                 </div>
@@ -116,7 +117,7 @@
         </section>
 
         <section class="feedback container px-md-3 px-5">
-            <img src="./src/img/bg-quotes.png" alt="Quote" class="feedback-quote">
+            <img src="./src/img/bg-quotes.png" alt="Quote" class="feedback-quote fb-quote">
             <div class="testemonials d-grid">
                 <div class="coment fb-one rounded rounded-4 d-flex flex-column gap-3">
                     <p class="coment-text my-sm-3 mb-2">
@@ -170,14 +171,18 @@
                 It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
                 questions, our support team would be happy to help you.
             </p>
-            <form action="" method="get" class="form d-flex gap-4 flex-sm-row flex-column justify-content-center align-items-center mb-2">
-                <input type="email" name="email" class="email rounded rounded-5 px-4" placeholder="email@example.com" data-input-email>
+            <form class="form d-flex gap-4 flex-sm-row flex-column justify-content-center align-items-top mb-2" data-form>
+                <div class="email-box d-flex flex-column gap-2">
+                    <input type="email" name="email" class="email rounded rounded-5 px-4"
+                        placeholder="email@example.com" data-input-email>
+                    <div class="error gap-2" data-error>
+                        <i class="bi bi-exclamation-circle"></i>
+                        <p class="text-error m-0">Error! Plese, check your email.</p>
+                    </div>
+                </div>
                 <button type="submit" class="button rounded rounded-5" data-button-send>Get Started For Free</button>
             </form>
-            <div class="error align-content-start gap-2" data-error>
-                <i class="bi bi-exclamation-circle"></i>
-                <p class="text-error">Error! Plese, check your email.</p>
-            </div>
+
         </section>
     </main>
 

@@ -123,6 +123,15 @@ body {
     padding: 8rem 1rem 0;
   }
 }
+.main .items .item-img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768.99px) {
+  .main .items .item-img {
+    max-width: 75%;
+  }
+}
 .main .items .item-title {
   margin: 1rem 0 0.5rem 0;
   font-family: "Raleway", sans-serif;
@@ -196,7 +205,7 @@ body {
 @media (max-width: 768.99px) {
   .main .feedback .feedback-quote {
     width: 2.5rem;
-    height: fit-content;
+    height: auto;
   }
 }
 .main .feedback .testemonials {
@@ -243,7 +252,8 @@ body {
 }
 
 .cta-box {
-  max-width: 863px;
+  width: 863px;
+  max-width: 90%;
   top: 7rem;
   left: 50%;
   transform: translateX(-50%);
@@ -285,23 +295,37 @@ body {
     padding: 0;
   }
 }
-.cta-box form .email {
+.cta-box form .email-box {
   flex-grow: 1;
+}
+.cta-box form .email-box .email {
   max-width: 100%;
   height: 3rem;
   border: none;
   outline: none;
 }
 @media (max-width: 768.99px) {
-  .cta-box form .email {
+  .cta-box form .email-box .email {
     width: 100%;
   }
 }
-.cta-box form .email::placeholder {
+.cta-box form .email-box .email::placeholder {
   font-weight: 300;
 }
-.cta-box form .email:focus::placeholder {
+.cta-box form .email-box .email:focus::placeholder {
   color: transparent;
+}
+.cta-box form .email-box .error {
+  display: none;
+  padding: 0 1rem;
+  color: red;
+}
+@media (max-width: 768.99px) {
+  .cta-box form .email-box .error {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
 }
 .cta-box form .button {
   flex-grow: 0;
@@ -322,17 +346,6 @@ body {
   .cta-box form .button {
     width: 100%;
     height: 3rem;
-  }
-}
-.cta-box .error {
-  display: none;
-  width: 100%;
-  padding: 0 5.75rem;
-  color: red;
-}
-@media (max-width: 768.99px) {
-  .cta-box .error {
-    padding: 0;
   }
 }
 
@@ -382,30 +395,6 @@ body {
 }
 #footer .footer-box .footer-content .social a i {
   font-size: 0.875rem;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  display: none;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #202A3C;
-  border-radius: 10px;
-}
-
-@media (min-width: 768px) and (max-width: 991.99px) {
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
-@media (max-width: 768.99px) {
-  ::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

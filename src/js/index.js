@@ -1,102 +1,52 @@
+// .header-content .intro-pic .intro-title .intro-text .intro-button .one .two .three .four .info-img .info-title .info-text .info-link .fb.quote .fb-one .fb-two .fb-three .cta-box .footer-box
+
 window.sr = ScrollReveal({ reset: true });
 
-sr.reveal('.one, .feedback-quote, .fb-one, .fb-two, .fb-three', {
-    origin: 'left',
-    distance: '100px',
-    duration: 2000,
-    reset: false
-})
-
-sr.reveal('.three', {
-    origin: 'left',
-    distance: '100px',
-    duration: 2000,
-    delay: 800,
-    reset: false
-})
-
-sr.reveal('.two', {
-    origin: 'right',
-    distance: '100px',
-    reset: false
-})
-
-sr.reveal('.four', {
-    origin: 'right',
-    distance: '100px',
-    duration: 2000,
-    delay: 800,
-    reset: false
-})
-
-sr.reveal('.cta-box, .footer-img, .footer-content', {
-    origin: 'bottom',
-    distance: '100px',
-    duration: 2000,
-    reset: false
-})
-
-sr.reveal('.footer-img, .footer-content', {
-    origin: 'bottom',
-    distance: '10px',
-    duration: 2000,
-    reset: false
-})
-
-sr.reveal('.header-container', {
+sr.reveal('.header-container, .intro-pic, .intro-title, .intro-text, .intro-button, .one, .two, .three, .four, .info-img, .info-title, .info-text, .info-link, .fb.quote, .fb-one, .fb-two, .fb-three', {
     origin: 'top',
-    distance: '100px',
+    distance: '24px',
     duration: 2000,
     reset: false
 })
 
-sr.reveal('.intro-button, .intro-pic', {
-    duration: 2000,
-    reset: false
-});
+sr.reveal('.intro-pic, .two, .fb-two, .cta-box', {
+    delay: 250
+})
 
-sr.reveal('.intro-img, .intro-title, .info-desc, .fb-one, .footer-img, .footer-content', {
-    delay: 500,
-    reset: false
-});
+sr.reveal('.intro-title, .three, .fb-three, .footer-img', {
+    delay: 500
+})
 
-sr.reveal('.intro-text, .fb-two', {
-    delay: 1000,
-    reset: false
-});
+sr.reveal('.intro-text, .four, .fb-four, .location', {
+    delay: 750
+})
 
-sr.reveal('.fb-three', {
-    delay: 1500,
-    reset: false
-});
+sr.reveal('.intro-button, .contact', {
+    delay: 1000
+})
+
+sr.reveal('.links', {
+    delay: 1250
+})
+
+sr.reveal('.social', {
+    delay: 1500
+})
 
 const inputEmail = document.querySelector('[data-input-email]');
-const btnSend = document.querySelector('[data-button-send]');
+const form = document.querySelector('[data-form]');
 const errorMessage = document.querySelector('[data-error]');
 
-btnSend.addEventListener('submit', function(event) {
+inputEmail.value = '';
+
+form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    let emailPattern = /\S+@\S+\.\S+/;
+    let emailValid = /\S+@\S+\.\S+/;
 
-    if (emailPattern.test(email)) {
+    if (emailValid.test(email)) {
         errorMessage.style.display = 'none';
     } else {
         errorMessage.style.display = 'flex';
-        return
     }
 });
-let emailValue = /\S+@\S+\.\S+/;
-
-function validateEmail(email) {
-    if (emailValue.test(email) === false) {
-        errorMessage.style.display = 'flex !important';
-    } else if (emailValue.test(email) === true) {
-        errorMessage.style.display = 'none';
-    }
-}
-
-btnSend.addEventListener('click', function(e) {
-    e.preventDefault();
-    validateEmail(inputEmail.value);
-}); */

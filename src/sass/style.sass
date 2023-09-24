@@ -86,6 +86,12 @@ body
         @include mixins.mobile
             padding: 8rem 1rem 0
 
+        .item-img
+            max-width: 100%
+            height: auto
+            @include mixins.mobile
+                max-width: 75%
+
         .item-title
             margin: 1rem 0 .5rem 0
             font-family: 'Raleway', sans-serif
@@ -144,7 +150,7 @@ body
             left: -10px
             @include mixins.mobile
                 width: 2.5rem
-                height: fit-content
+                height: auto
 
         .testemonials
             position: relative
@@ -182,7 +188,8 @@ body
                             margin-top: -4px
 
 .cta-box
-    max-width: 863px
+    width: 863px
+    max-width: 90%
     top: 7rem
     left: 50%
     transform: translateX(-50%)
@@ -212,21 +219,32 @@ body
         @include mixins.mobile
             padding: 0
 
-        .email
+        .email-box
             flex-grow: 1
-            max-width: 100%
-            height: 3rem
-            border: none
-            outline: none
-            @include mixins.mobile
-                width: 100%
 
-            &::placeholder
-                font-weight: 300
+            .email
+                max-width: 100%
+                height: 3rem
+                border: none
+                outline: none
+                @include mixins.mobile
+                    width: 100%
 
-            &:focus
                 &::placeholder
-                    color: transparent
+                    font-weight: 300
+
+                &:focus
+                    &::placeholder
+                        color: transparent
+
+            .error
+                display: none
+                padding: 0 1rem
+                color: red
+                @include mixins.mobile
+                    width: 100%
+                    justify-content: center
+                    padding: 0
 
         .button
             flex-grow: 0
@@ -236,14 +254,6 @@ body
             @include mixins.mobile
                 width: 100%
                 height: 3rem
-
-    .error
-        display: none
-        width: 100%
-        padding: 0 5.75rem
-        color: red
-        @include mixins.mobile
-            padding: 0
 
 #footer
     background: variables.$footer
@@ -288,21 +298,3 @@ body
 
                 i
                     font-size: 0.875rem
-
-::-webkit-scrollbar
-    width: 10px
-
-::-webkit-scrollbar-track
-    display: none
-
-::-webkit-scrollbar-thumb
-    background: variables.$blue400
-    border-radius: 10px
-
-@include mixins.tablet
-    ::-webkit-scrollbar
-        display: none
-
-@include mixins.mobile
-    ::-webkit-scrollbar
-        display: none
