@@ -24,20 +24,8 @@ sr.reveal('.intro-title, .three, .fb-three, .footer-img', {
     delay: 500
 })
 
-sr.reveal('.intro-text, .four, .fb-four, .location', {
+sr.reveal('.intro-text, .four, .fb-four, .location, .intro-button, .contact, .links, .social', {
     delay: 750
-})
-
-sr.reveal('.intro-button, .contact', {
-    delay: 1000
-})
-
-sr.reveal('.links', {
-    delay: 1250
-})
-
-sr.reveal('.social', {
-    delay: 1500
 })
 
 const inputEmail = document.querySelector('[data-input-email]');
