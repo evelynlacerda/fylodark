@@ -254,7 +254,7 @@ body {
 .cta-box {
   width: 863px;
   max-width: 90%;
-  bottom: 7rem;
+  bottom: -5rem;
   left: 50%;
   transform: translateX(-50%);
   background: #1B2330;
@@ -262,8 +262,8 @@ body {
 }
 @media (max-width: 768.99px) {
   .cta-box {
-    bottom: -8rem;
-    max-width: 90%;
+    bottom: -7rem;
+    max-width: 85%;
   }
 }
 .cta-box .cta-title {

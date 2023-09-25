@@ -22,7 +22,7 @@ sr.reveal('.intro-title, .three, .fb-three, .footer-img', {
     delay: 500
 })
 
-sr.reveal('.intro-text, .four, .fb-four, .location, .intro-button, .contact, .links, .social', {
+sr.reveal('.intro-text, .four, .location, .intro-button, .contact, .links, .social', {
     delay: 750
 })
 
