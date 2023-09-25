@@ -9,6 +9,13 @@ sr.reveal('.header-container, .intro-pic, .intro-title, .intro-text, .intro-butt
     reset: false
 })
 
+sr.reveal('.cta-box, .footer-img, .location, .contact, .links, .social', {
+    origin: 'bottom',
+    distance: '24px',
+    duration: 2000,
+    reset: false
+})
+
 sr.reveal('.intro-pic, .two, .fb-two, .cta-box', {
     delay: 250
 })
