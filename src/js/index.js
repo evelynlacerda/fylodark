@@ -1,5 +1,3 @@
-// .header-content .intro-pic .intro-title .intro-text .intro-button .one .two .three .four .info-img .info-title .info-text .info-link .fb.quote .fb-one .fb-two .fb-three .cta-box .footer-box
-
 window.sr = ScrollReveal({ reset: true });
 
 sr.reveal('.header-container, .intro-pic, .intro-title, .intro-text, .intro-button, .one, .two, .three, .four, .info-img, .info-title, .info-text, .info-link, .fb.quote, .fb-one, .fb-two, .fb-three', {

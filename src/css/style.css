@@ -185,7 +185,7 @@ body {
 }
 .main .feedback {
   max-width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 32rem;
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
   .main .feedback {
@@ -194,7 +194,7 @@ body {
 }
 @media (max-width: 768.99px) {
   .main .feedback {
-    margin-bottom: -3rem;
+    margin-bottom: 20rem;
   }
 }
 .main .feedback .feedback-quote {
@@ -254,7 +254,7 @@ body {
 .cta-box {
   width: 863px;
   max-width: 90%;
-  top: 7rem;
+  bottom: 7rem;
   left: 50%;
   transform: translateX(-50%);
   background: #1B2330;
@@ -262,7 +262,7 @@ body {
 }
 @media (max-width: 768.99px) {
   .cta-box {
-    top: 5rem;
+    bottom: -8rem;
     max-width: 90%;
   }
 }
