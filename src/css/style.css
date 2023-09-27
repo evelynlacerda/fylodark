@@ -8,6 +8,11 @@ body {
   max-width: 1200px;
 }
 
+.box-header {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
 .header {
   background: #1B2330;
 }
@@ -185,7 +190,7 @@ body {
 }
 .main .feedback {
   max-width: 1160px;
-  margin: 0 auto 32rem;
+  margin: 0 auto 26rem;
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
   .main .feedback {

@@ -30,16 +30,21 @@ const inputEmail = document.querySelector('[data-input-email]');
 const form = document.querySelector('[data-form]');
 const errorMessage = document.querySelector('[data-error]');
 
-inputEmail.value = '';
+inputEmail.onclick = () => {
+    errorMessage.style.display = 'none';
+}
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
+let emailValid = /\S+@\S+\.\S+/;
 
-    let emailValid = /\S+@\S+\.\S+/;
-
-    if (emailValid.test(email)) {
+function warnMessage() {
+    if (emailValid.test(inputEmail.value)) {
         errorMessage.style.display = 'none';
     } else {
         errorMessage.style.display = 'flex';
     }
+}
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    warnMessage();
 });
